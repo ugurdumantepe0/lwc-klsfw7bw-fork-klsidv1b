@@ -1,0 +1,47 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_medium">BA & BS Alım Satım Raporu</h1>
+		<br>
+
+
+		<lightning-combobox name="ay" label="Ay :" value={month} variant='label-inline' placeholder="Ay Seçimi Yapın"
+			options={months} onchange={handleChange}>
+		</lightning-combobox>
+
+		<lightning-combobox name="yıl" label="Yıl :" value={year} variant='label-inline' placeholder="Yıl Seçimi Yapın"
+			options={years} onchange={handleChange}>
+		</lightning-combobox>
+
+		<div class="slds-float_right">
+			<div class="slds-p-around_medium lgc-bg">
+				<lightning-button-icon icon-name="utility:search" alternative-text="Ara" class="slds-m-right_xx-medium"
+					title="Ara"></lightning-button-icon>
+			</div>
+		</div>
+
+		<br> <br> <br>
+		<lightning-tabset>
+			<lightning-tab label="BA Alımlar">
+
+
+
+
+
+
+
+			</lightning-tab>
+			<lightning-tab label="BA Satımlar">
+				Content for tab 2
+			</lightning-tab>
+
+
+		</lightning-tabset>
+
+
+	</div>
+
+
+
+
+
+</template>
